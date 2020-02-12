@@ -1,14 +1,14 @@
-﻿using AssetUsageDetectorNamespace.Extras;
-using System;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.SceneManagement;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
-
-namespace AssetUsageDetectorNamespace
+﻿namespace AssetUsageDetectorNamespace
 {
+	using System;
+	using System.Collections.Generic;
+	using UnityEditor;
+	using UnityEditor.SceneManagement;
+	using UnityEngine;
+	using UnityEngine.SceneManagement;
+	using Object = UnityEngine.Object;
+	using Extras;
+	
 	[Serializable]
 	public class SearchResultDrawParameters
 	{

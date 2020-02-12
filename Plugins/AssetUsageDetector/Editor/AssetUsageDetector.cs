@@ -1,32 +1,32 @@
 // Asset Usage Detector - by Suleyman Yasir KULA (yasirkula@gmail.com)
-
-using AssetUsageDetectorNamespace.Extras;
-using UnityEngine;
-using UnityEditor;
-using UnityEditor.Animations;
-using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-using System;
-using System.IO;
-using UnityEngine.UI;
-using System.Text;
-#if UNITY_2017_1_OR_NEWER
-using UnityEngine.U2D;
-#if UNITY_2018_2_OR_NEWER
-using UnityEditor.U2D;
-#endif
-using UnityEngine.Playables;
-#endif
-#if UNITY_2017_2_OR_NEWER
-using UnityEngine.Tilemaps;
-#endif
-using Object = UnityEngine.Object;
-
 namespace AssetUsageDetectorNamespace
 {
+	using Extras;
+	using UnityEngine;
+	using UnityEditor;
+	using UnityEditor.Animations;
+	using UnityEngine.SceneManagement;
+	using UnityEditor.SceneManagement;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Reflection;
+	using System;
+	using System.IO;
+	using UnityEngine.UI;
+	using System.Text;
+#if UNITY_2017_1_OR_NEWER
+	using UnityEngine.U2D;
+#if UNITY_2018_2_OR_NEWER
+	using UnityEditor.U2D;
+#endif
+	using UnityEngine.Playables;
+#endif
+#if UNITY_2017_2_OR_NEWER
+	using UnityEngine.Tilemaps;
+#endif
+	using Object = UnityEngine.Object;
+	
+
 	[Flags]
 	public enum SceneSearchMode { None = 0, OpenScenes = 1, ScenesInBuildSettingsAll = 2, ScenesInBuildSettingsTickedOnly = 4, AllScenes = 8 };
 	public enum PathDrawingMode { Full = 0, ShortRelevantParts = 1, Shortest = 2 };
